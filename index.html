@@ -2,27 +2,27 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./styles/style.css" />
-        <title>Flights</title>
+        <title>Stop Watch</title>
     </head>
     <body>
-        <main>
-            <div class="img">
-                <img src="./assets/flight.jpeg" alt="flight" />
+        <div class="container">
+            <div class="img-container">
+                <h1>Stopwatch</h1>
             </div>
-            <div id="parent">
-                <div class="flight test">
-                    <div class="name">Name</div>
-                    <div class="plane">Plane</div>
-                    <div class="departureDate">Departure Date</div>
-                    <div class="origin">Origin</div>
-                    <div class="arrivalDate">Arrival Date</div>
-                    <div class="destination">Destination</div>
-                    <div class="stops">Stops</div>
-                </div>
+            <div id="time">
+                <span class="minutes">00</span> :
+                <span class="seconds">00</span> :
+                <span class="milliseconds">000</span>
             </div>
-        </main>
+            <div class="buttons">
+                <button type="button" id="start">Start</button>
+                <button type="button" id="stop">Stop</button>
+                <button type="button" id="reset">Reset</button>
+            </div>
+        </div>
         <script type="module" src="./src/init.js"></script>
     </body>
 </html>

@@ -1,3 +1,9 @@
-import loadEvent from './events/loadEvent.js';
+import startEvent from "./events/startEvent.js";
+import stopEvent from "./events/stopEvent.js";
+import resetEvent from "./events/resetEvent.js";
 
-loadEvent();
+
+
+startEvent(); //excute function
+stopEvent();
+resetEvent();
